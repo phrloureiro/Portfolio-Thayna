@@ -1,0 +1,274 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+  :root {
+  --main-white: #ffffff;
+  --main-gray: #E1CCC8;
+}
+
+body {
+    background: var(--main-gray);
+}
+
+#image {
+  max-width: 100%;
+  position: relative;
+}
+
+.h1, h2, p {
+  font-family: Roboto Condensed;
+  font-weight: 700;
+  text-align: center;
+  background: var(--main-gray);
+}
+
+.nav-img{
+  padding-left: 30px;
+  max-width: 100%;
+}
+
+.nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--main-white);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.nav-list {
+  display: inline-flex;
+  list-style: none;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media (max-width: 28.75em) {
+  .nav {
+    justify-content: center;
+  }
+
+  .nav-list {
+    margin: 0 1rem;
+  }
+}
+
+.nav-list a {
+  display: block;
+  font-size: 2.2rem;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  color: #000000;
+  padding: 2rem;
+  text-decoration: none;
+}
+
+.nav-list a:hover {
+  background: var(--main-gray);
+}
+
+#welcome-section {
+  background: var(--main-gray);
+}
+
+.welcome-section > h1, p {
+  font-size: 3rem;
+  font-family: Roboto Condensed;
+  font-weight: 200;
+  font-style: normal;
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+  background: var(--main-gray);
+}
+
+.welcome-section > p {
+  font-size: 3rem;
+  font-family: Roboto Condensed;
+  font-weight: 200;
+  font-style: normal;
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+  background: var(--main-gray);
+}
+
+.projects-section-header {
+  font-family: Roboto Condensed;
+  font-weight: 100;
+  font-size: 3rem;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  max-width: 100%;
+  background: var(--main-gray);
+}
+
+.projects-section {
+  background: var(--main-gray);
+  text-decoration: none;
+}
+
+
+.project-tile > p {
+  font-family: Roboto Condensed;
+  font-weight: 200;
+  font-size: 2rem;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  background: var(--main-gray);
+  display: block;
+}
+
+.results-section {
+  font-family: Roboto Condensed;
+  font-weight: 100;
+  font-size: 2rem;
+  font-style: normal;
+  text-decoration: none;
+  color: #000000;
+  max-width: 100%;
+  text-align: center;
+  background: var(--main-gray);
+}
+
+.contact-section-header {
+  font-family: Roboto Condensed;
+  font-weight: 100;
+  font-size: 2rem;
+  font-style: normal;
+  text-decoration: none;
+  color: #000000;
+  max-width: 100%;
+  text-align: center;
+  background: var(--main-gray);
+}
+
+.btn-contact-details {
+  width: 400px;
+  height: 200px;
+  font-family: inherit;
+  font-size: 40px;
+  text-transform: uppercase;
+  background-color: #77216F;
+  color: white;
+  cbursor: pointer;
+}
+
+.footer {
+  max-width: 100%;
+  background: var(--main-gray);
+}
+
+.footer-section > p{
+  font-family: Roboto Condensed;
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+</style>
+
+<html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div id="main">
+    <nav id="navbar" class="nav">
+    <img class = "nav-img" id="navbar-img" src="./1.png">
+    <ul class="nav-list">
+    <li>
+      <a href="#welcome-section">About me</a>
+    </li>
+    <li>
+      <a href="#projects">Work</a>
+    </li>
+    <li>
+      <a href="#results">Achievements</a>
+    </li>
+    <li>
+      <a href="#contact">Contact</a>
+    </li>
+  </ul>
+</nav>
+</div>
+<body>
+  <section id="welcome-section" class="welcome-section">
+  <img class="img-border" id="image" alt="Typewriter-img" src="./image-from-rawpixel-id-3282593-original.jpg">
+  <h1>Hello, I am Thayná!</h1>
+  <p>I am a freelance copywriter.</p>
+  <p> I have a MBA in Strategic Digital Marketing at Descomplica Faculty, an Inbound Marketing HubSpot Academy Certificate, and Certificates of Copywriting and Web Content Producer from Rock Content.</p>
+  <p>You can download my complete CV <a href="https://drive.google.com/file/d/1Sie_LB7-RXXV7WPH0ETjs9SA92LVbfoj/view?usp=sharing" target="_blank">here</a>, with all relevant certificates attached to it.</p>
+  </section>
+  <section id="projects" class="projects-section">
+    <h2 class="projects-section-header">These are some of my published texts as a copywriter:</h2>
+    
+    <div class="projects-grid">
+
+    <div class="project-tile">
+      <a href="https://drive.google.com/file/d/1cI7grCYOpDnAiW5Dp94YikAfX6Agg24b/view" target="_blank">
+        <p class="project-title">"'Escola de jornalismo desde a fundação', avalia historiadora"</p>
+      </a>
+     </div>
+
+      <div class="project-tile">
+      <a href="https://anjosramos.com.br/covid-19/as-trabalhadoras-gravidas-ou-as-que-estao-em-licenca-maternidade-tambem-podem-ter-contratos-suspensos-ou-salarios-reduzidos/" target="_blank">
+        <p class="project-title">"Foi diagnosticado com covid-19, e agora?"</p>
+      </a>
+      </div>
+    
+   <div class="project-tile">
+     <a href="https://anjosramos.com.br/sindrome-de-burnout/trabalhadores-com-sindrome-de-burnout-quais-os-sintomas-e-como-evitar/" target="_blank">
+        <p class="project-title">"Trabalhadores com Síndrome de Burnout, quais os sintomas e como evitá-la?"</p>
+    </a>
+    </div>
+    <div class="project-tile">
+      <a href="https://drive.google.com/file/d/1gmZdx2RxSwuXMikiOkrckQPm-de-PJPy/view?usp=sharing" target="_blank">
+        <p class="project-title">"Setor financeiro descumpre acordo e continua demitindo durante a pandemia"</p>
+      </a>
+     </div>
+     <div class="project-tile">
+      <a href="https://anjosramos.com.br/covid-19/as-trabalhadoras-gravidas-ou-as-que-estao-em-licenca-maternidade-tambem-podem-ter-contratos-suspensos-ou-salarios-reduzidos/" target="_blank">
+        <p class="project-title">"As trabalhadoras grávidas ou as que estão em licença-maternidade também podem ter contratos suspensos ou salários reduzidos em razão da Covid-19?"</p>
+      </a>
+     </div>
+
+      <div class="project-tile">
+      <a href="https://drive.google.com/file/d/1gmZdx2RxSwuXMikiOkrckQPm-de-PJPy/view?usp=sharing" target="_blank">
+        <p class="project-title">"Setor financeiro descumpre acordo e continua demitindo durante a pandemia"</p>
+      </a>
+     </div>
+     
+     
+     </div>
+      <section id="results" class="results-section">
+        <h2 class="results-section-header">This is a <a href="https://docs.google.com/spreadsheets/d/11L56ZMUB3GMc65h0Sila-TzteAIHWnic/edit?usp=sharing&ouid=104570348619192102309&rtpof=true&sd=true" target="_blank">spreadsheet</a> showing the access metrics of the pieces I wrote<h2>
+
+
+        <section id="contact" class="contact-section">
+        <div class="contact-section-header">
+    <h4>If you like what you see, let's work together!</h4>
+    </div>
+        <div class="contact-links">
+    <a
+      href="https://www.linkedin.com/in/thaynacp"
+      target="_blank"
+      class="btn-contact-details">
+      <i class="fab fa-linkedin"></i> Linkedin</a>
+    <a
+      href="mailto:thyanacpeixoto@gmail.com"
+      target="_blank"
+      class="btn-contact-details">
+      <i class="fab fa-email"></i> Send me an e-mail</a>
+        </div>
+      </section>
+</body>
+      <footer id="footer" class="footer-section">
+  <p>
+    This is a sample of my work. All works presented here were made by me, Thayná.
+  </p>
+</footer>
+</div>
