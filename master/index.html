@@ -21,10 +21,16 @@ body {
   background: var(--main-gray);
 }
 
+.nav-img{
+  padding-left: 30px;
+  max-width: 100%;
+}
+
 .nav {
-  display: flex;
-  justify-content: flex-end;
   position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   top: 0;
   left: 0;
   width: 100%;
@@ -33,11 +39,11 @@ body {
   z-index: 10;
 }
 
-
 .nav-list {
-  display: flex;
-  margin-right: 2rem;
+  display: inline-flex;
   list-style: none;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 @media (max-width: 28.75em) {
@@ -104,10 +110,11 @@ body {
 
 .projects-section {
   background: var(--main-gray);
+  text-decoration: none;
 }
 
 
-.project-tile {
+.project-tile > p {
   font-family: Roboto Condensed;
   font-weight: 200;
   font-size: 2rem;
@@ -143,6 +150,17 @@ body {
   background: var(--main-gray);
 }
 
+.btn-contact-details {
+  width: 400px;
+  height: 200px;
+  font-family: inherit;
+  font-size: 40px;
+  text-transform: uppercase;
+  background-color: #77216F;
+  color: white;
+  cbursor: pointer;
+}
+
 .footer {
   max-width: 100%;
   background: var(--main-gray);
@@ -159,7 +177,8 @@ body {
 <html>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div id="main">
-  <nav id="navbar" class="nav">
+    <nav id="navbar" class="nav">
+    <img class = "nav-img" id="navbar-img" src="./1.png">
     <ul class="nav-list">
     <li>
       <a href="#welcome-section">About me</a>
@@ -175,6 +194,7 @@ body {
     </li>
   </ul>
 </nav>
+</div>
 <body>
   <section id="welcome-section" class="welcome-section">
   <img class="img-border" id="image" alt="Typewriter-img" src="./image-from-rawpixel-id-3282593-original.jpg">
@@ -236,15 +256,13 @@ body {
     <a
       href="https://www.linkedin.com/in/thaynacp"
       target="_blank"
-      class="btn contact-details"
-      ><i class="fab fa-linkedin"></i> Linkedin</a
-    >
+      class="btn-contact-details">
+      <i class="fab fa-linkedin"></i> Linkedin</a>
     <a
       href="mailto:thyanacpeixoto@gmail.com"
       target="_blank"
-      class="btn contact-details"
-      ><i class="fab fa-email"></i> Send me an e-mail</a
-      >
+      class="btn-contact-details">
+      <i class="fab fa-email"></i> Send me an e-mail</a>
         </div>
       </section>
 </body>
